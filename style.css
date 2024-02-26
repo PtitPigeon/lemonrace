@@ -1,0 +1,173 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #1d1d1d;
+}
+
+header {
+    background-color: #ffcc00;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffcc00;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    font-weight: 400px;
+    font-size: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+    margin: 0 0 10px;
+    border-radius: 5px;
+    background-color: #f0ecda;
+}
+
+nav a:hover {
+
+    font-weight: 500px;
+    font-size: 30px;
+    background-image: url("https://i.gifer.com/2xf8.gif");
+    background-repeat: no-repeat;
+    background-size: 212px;
+    color: aliceblue;
+    padding: 25px;
+}
+
+main {
+    padding: 20px;
+    margin-left: 220px;
+    /* Adjusted to create space for the navigation */
+}
+
+footer {
+    background-color: #ffcc00;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+#popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#popup-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #eeeb5a;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.custom-marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.switch input {
+    display: none;
+}
+
+.switch {
+    display: inline-block;
+    width: 60px;
+    /*=w*/
+    height: 30px;
+    /*=h*/
+    margin: 4px;
+    transform: translateY(50%);
+    position: relative;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 30px;
+    box-shadow: 0 0 0 2px #777, 0 0 4px #777;
+    cursor: pointer;
+    border: 4px solid transparent;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #777;
+    border-radius: 30px;
+    transform: translateX(-30px);
+    /*translateX(-(w-h))*/
+    transition: 0.2s;
+}
+
+input:checked+.slider:before {
+    transform: translateX(30px);
+    /*translateX(w-h)*/
+    background-color: limeGreen;
+}
+
+input:checked+.slider {
+    box-shadow: 0 0 0 2px limeGreen, 0 0 8px limeGreen;
+}
+.position-button {
+     display: flex;
+    justify-content: flex-end;
+    width: 50px;
+}
