@@ -100,22 +100,6 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.custom-marquee {
-    white-space: nowrap;
-    overflow: hidden;
-    animation: marquee 25s linear infinite;
-}
-
-@keyframes marquee {
-    from {
-        transform: translateX(100%);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
-}
-
 .switch input {
     display: none;
 }
@@ -170,4 +154,15 @@ input:checked+.slider {
      display: flex;
     justify-content: flex-end;
     width: 50px;
+}
+
+footer {
+padding: auto;
+margin: auto;
+}
+.italic {
+    font-style: italic;
+}
+.bmw {
+    color: black;
 }
