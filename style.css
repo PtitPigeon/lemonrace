@@ -166,3 +166,16 @@ margin: auto;
 .bmw {
     color: black;
 }
+.buttonn {
+    display: inline-block;
+    background: linear-gradient(#ddbb31, #eeeb5a);
+    color: white;
+    border-radius: 50px;
+    padding: 20px 30px;
+}
+.butt2 {
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+    padding: 0px;
+}
