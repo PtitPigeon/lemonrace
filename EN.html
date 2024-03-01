@@ -7,14 +7,28 @@
     <title>Lemons Race 24hrs</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="Images/thitiphum-koonjantuek-TFqjlTmkeyY-unsplash.jpg" type="image/x-icon">
-
+    <script>
+        var clickCount = 0; // Variable pour suivre le nombre de clics
+    
+        function toggleLink() {
+          var myLink = document.getElementById('dynamicLink');
+          
+          // Vérifie si le lien a été cliqué plus de trois fois
+          if (clickCount >= 3) {
+            myLink.href = 'https://www.youtube.com/watch?v=Z3J_MCbwaJ0&ab_channel=K%C3%BCrstOtonoye'; // Définir le nouveau lien
+          } else {
+            myLink.href = 'https://www.youtube.com/watch?v=xvFZjo5PgG0'; // Définir le lien initial
+            clickCount++; // Incrémenter le nombre de clics
+          }
+        }
+      </script>    
 </head>
 
 <body>
 
     <script src="script.js"></script>
     <header>
-        <h1>Lemons Race 24hrs</h1>
+        <h1 style="font-family: titre-font;">Lemons Race 24hrs 🚗🚗</h1>
     </header>
 
     <nav>
@@ -26,32 +40,44 @@
     </nav>
     <!--TODO:-->
     <main>
-        <h2>A race with a budget of <span class="italic">500 Bucks??</span> </h2>
-        <p>Yes you heard it right !! So basically a race with junkkk, like an old <a class="bmw" target="_blank"
+        <h2 style="font-family: h2-font;">A race with a budget of <span class="italic">half a Grand ??</span> </h2>
+        <p style="font-family: tout-font;">Yes you heard it right !! So basically a race with junkkk, like an old <a class="bmw" target="_blank"
                 href="https://www.bmw.ca/fr/home.html">BMW</a> with a <a class="bmw" target="_blank"
                 href="https://www.speedhunters.com/2021/10/k-powered-10-best-k-swapped-spotlights/">kswap</a>.</p>
-        <p>In this race you will not only found addict of pure racing but also some safety measures that are not that
+        <p style="font-family: tout-font;">In this race you will not only found addict of pure racing but also some safety measures that are not that
             included in the 500$.<br>
             Because you know only a recaro seat or sparco or nly 400$ PER SEAT 😭😭.</p>
-        <p>When i say pure adrenaline, I mean to. Becasue it is not like <a class="bmw" target="_blank"
+        <p style="font-family: tout-font;">When i say pure adrenaline, I mean to. Becasue it is not like <a class="bmw" target="_blank"
                 href="formula1.com">F1</a>, you don't really need a big wallet, it is 500$.</p>
-        <p>There is many tracks in the west south north in all the directions of america.</p>
+        <p style="font-family: tout-font;">There is many tracks in the west south north in all the directions of america.</p>
         <b>--------------------------------------------------------------------------------------------------------------------------------------------------------------</b>
-        <h2>You will need to start <i>somewhere</i></h2>
-        <p>you will need to start somewhere like you gotta find a team an old car to last 24hrs</p>
-        <p>There is no such easy things you can go on the official <a class="bmw" target="_blank" href="https://24hoursoflemons.com/ok-stupid-registration/">matchmaking</a> lemons race page or on the <a class="bmw" target="_blank" href="https://www.facebook.com/groups/308871917387966">OkStupid facebook page</a> ! (hope you will find someone)</p>
-        <p>After you have some friends you go to junk yard find all the stuff and don't forget </p>
+        <h2 style="font-family: h2-font;">What is <i>Lemons Race</i> ??</h2>
+        <p style="font-family: tout-font;">Really simple. Cheapest racing ever ! It is basically "<a class="bmw" target="_blank"
+                href="https://www.24h-lemans.com/en">LeMans</a>" with lemons car !</p>
+        <p style="font-family: tout-font;">So you take your car to the track but it is all about skills ! Because everyone has a 500$ car. It is not
+            about money, about skills...</p>
+        <b>--------------------------------------------------------------------------------------------------------------------------------------------------------------</b>
+        <h2 style="font-family: h2-font;">You will need to start <i>somewhere</i></h2>
+        <p style="font-family: tout-font;">you will need to start somewhere like you gotta find a team an old car to last 24hrs</p>
+        <p style="font-family: tout-font;">There is no such easy things you can go on the official <a class="bmw" target="_blank"
+                href="https://24hoursoflemons.com/ok-stupid-registration/">matchmaking</a> lemons race page or on the <a
+                class="bmw" target="_blank" href="https://www.facebook.com/groups/308871917387966">OkStupid facebook
+                page</a> ! (hope you will find someone)</p>
+        <p style="font-family: tout-font;">After you have some friends you go to junk yard find all the stuff and don't forget </p>
 
     </main>
     <!--TODO:-->
     <footer>
-        <marquee scrollamount="20"><img width="150px" src="Images/Sans titre-2.png" alt="RaceCar"></marquee>
+        <a target="_blank" id="dynamicLink" href="https://www.initiallink.com" onclick="toggleLink()">
+            <marquee scrollamount="20"><img width="150px" src="Images/Sans titre-2.png" alt="RaceCar"></marquee>
+        </a>
         <div class="butt2">
             <a href="index.html" class="buttonn">FR</a>
             <a class="" target="_blank" href="https://24hoursoflemons.com/">Myself. All rights reserved.(I think)</a>
         </div>
     </footer>
 </body>
+
 </html>
 <!--FIXME: 
 https://www.speedhunters.com/2021/10/k-powered-10-best-k-swapped-spotlights/
@@ -59,4 +85,29 @@ https://www.formula1.com/
 https://www.facebook.com/groups/308871917387966
 https://24hoursoflemons.com/ok-stupid-registration/
 <a class=" " target="_blank" href=" ">  </a>
+https://www.24h-lemans.com/en
+
+<a target="_blank" href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
+            <marquee scrollamount="20"><img width="150px" src="Images/Sans titre-2.png" alt="RaceCar"></marquee>
+</a>
 -->
+  <script>
+    var clickCount = 0; // Variable pour suivre le nombre de clics
+
+    function toggleLink() {
+      var myLink = document.getElementById('dynamicLink');
+      
+      // Vérifie si le lien a été cliqué plus de trois fois
+      if (clickCount >= 3) {
+        myLink.href = 'https://www.youtube.com/watch?v=Z3J_MCbwaJ0&ab_channel=K%C3%BCrstOtonoye'; // Définir le nouveau lien
+      } else {
+        myLink.href = 'https://www.youtube.com/watch?v=xvFZjo5PgG0'; // Définir le lien initial
+        clickCount++; // Incrémenter le nombre de clics
+      }
+    }
+  </script>
+
+
+  <a id="dynamicLink" href="https://www.initiallink.com" onclick="toggleLink()">Click me</a>
+
+
